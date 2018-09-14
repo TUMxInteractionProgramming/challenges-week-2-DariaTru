@@ -114,7 +114,7 @@ ul .selected {
   color: black;
 }
 
-  /* The opening message has a different alignment */
-.opening-message {
+  /* Own messages have different alignment */
+.own {
   margin-left: 17.5%;
 }
