@@ -1,0 +1,120 @@
+/* #2 #colorful #palette is:
+  * Background: #F5F5F5 (GREY 100)
+  * Primary Text: black
+
+  * Primary color: #3F51B5 (INDIGO)
+  * Primary color_text : white
+  * Accent color: #CDDC39 (LIME)
+  * Accent color_text: black
+  */ 
+
+/* Global styles */
+* {
+  /* #2 #font #faces */
+  font-family: 'Arial', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  /* #2 #colorful #background */
+  background-color: #F5F5F5;
+}
+
+button {
+  /* #2 #colourful #plusfive */
+  background-color: #CDDC39;
+  color: black;
+  }
+
+button, strong {
+  /* #2 #font capital #letters */
+  text-transform: uppercase;
+}
+
+/* App bar styles */
+h1 {
+  /* #2 #colourful #app-bar */
+  background-color: #3F51B5;
+  color: white;
+}
+
+/* Channels list styles */
+ul {
+  /* This now provides styles for ul instead of h2 */
+  /* #2 #colorful #channelandchat */
+  background-color: white;
+  list-style-type: none;
+}
+li {
+  /* Styling for channel list elements */
+  padding: 16px;
+  font-size: 16px;
+  height: 48px;
+  box-sizing: border-box;
+  border: 1px solid #F5F5F5;
+}
+li img {
+  /* Icons next to channels need a special alignment */
+  vertical-align: middle;
+}
+ul .selected {
+  /* Selected channel needs to be highlited */
+  color: #3F51B5;
+  border-left: 4px solid #3F51B5;
+}
+
+/* Tab bar styles */
+#tab-bar button {
+  /* Tab bar buttons are different than other buttons in the app */
+  background-color: white;
+  border: none;
+  font-size: 13px;
+  height: 72px;
+  width: 33%;
+  padding: 16px;
+}
+#tab-bar button img {
+  /* Special styling for tab button images */
+  display: block;
+  margin: auto;
+  margin-bottom: 4px;
+}
+#tab-bar .selected {
+  /* Selected tab needs to be highlighted */
+  border-bottom: 4px solid #3F51B5;
+}
+
+/* Messages styles */
+.message {
+  /* Provides styles for the message containers */
+  width: 80%;
+  margin-bottom: 8px;
+  margin-left: 2.5%;
+}
+.message p {
+  /* #2 #colorful #channelandchat */
+  background-color: white;
+  padding: 16px;
+}
+
+.message h3 {
+  /* #2 #font #metadata is now medium */
+  font-size: medium;
+}
+
+.message h3 em {
+  /* #2 #font #remaining overrides the default italic appearance of em elements*/
+  font-size: larger;
+  font-style: normal;
+}
+
+.message h3 a {
+  /* #2 #colorful #primary text color for all links */
+  color: black;
+}
+
+  /* The opening message has a different alignment */
+.opening-message {
+  margin-left: 17.5%;
+}

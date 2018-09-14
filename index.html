@@ -9,91 +9,8 @@
     <!-- We need to specify the character encoding, since we use chinese characters -->
     <meta charset="UTF-8">
 
-    <!-- #2 #css #elements -->
-    <style>
-
-        /* #2 #colorful #palette is:
-          * Background: #F5F5F5 (GREY 100)
-          * Primary Text: black
-
-          * Primary color: #3F51B5 (INDIGO)
-          * Primary color_text : white
-          * Accent color: #CDDC39 (LIME)
-          * Accent color_text: black
-          */
-
-        /*global styles */
-        * {
-            /* #2 #font #faces */
-            font-family: 'Arial', sans-serif;
-        }
-
-        body {
-            /* #2 #colorful #background */
-            background-color: #F5F5F5;
-        }
-
-        h1 {
-            /* #2 #colourful #app-bar */
-            background-color: #3F51B5;
-            color: white;
-        }
-
-        button {
-            /* #2 #colourful #plusfive */
-            background-color: #CDDC39;
-            color: black;
-            /* #2 #font capital #letters */
-            text-transform: uppercase;
-        }
-        
-        a {
-            /* #2 #colorful #primary text color for all links */
-            color: black;
-        }
-
-
-        /*styles for channel area*/
-        ul {
-            /* This now provides styles for <ul> instead of <h2> */
-            /* #2 #colorful #channelandchat */
-            background-color: white;
-            list-style-type: none;
-        }
-        
-        #tab-bar {
-            /* Styles for the tab-bar*/
-            background-color: white;
-        }
-
-        /*styles for chat area*/
-        p {
-            /* #2 #colorful #channelandchat */
-            background-color: white;
-        }
-
-        strong {
-            /* #2 #font #locations need an extra element, we'll use strong for w3w locations */
-            text-transform: uppercase;
-        }
-
-        h3 {
-            /* #2 #font #metadata is now medium */
-            font-size: medium;
-        }
-
-        em {
-            /* #2 #font #remaining overrides the default italic appearance of em elements*/
-            font-size: larger;
-            font-style: normal;
-        }
-      
-        .message {
-            /* Provides styles for the message containers */
-            width: 80%;
-        }
-       
-    </style>
+    <!-- Link to external style.css -->
+    <link rel="stylesheet" href="css/style.css"/>
 
 </head>
 
@@ -115,7 +32,7 @@
     <li>#Yummy 
         <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="favorites icon">
     </li>
-    <li>#SevenContinents 
+    <li class="selected">#SevenContinents 
         <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="favorites icon">
     </li>
     <li>#KillerApp 
@@ -133,7 +50,7 @@
 <!-- The channel's buttons are now grouped into a tab-bar -->
 <div id="tab-bar">
     <!-- Each button comes with it's corresponding icon -->
-    <button>
+    <button class="selected">
         <img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="lightbulb icon"> 
         new
     </button>
@@ -159,7 +76,7 @@
 </h1>
 
 <!-- #1 #chat #messages-->
-<div class="message">
+<div class="message opening-message">
     <!-- #1 #chat #metadata contains location, weekday, day, and time -->
     <h3>        
         <!-- Locations are linked to the w3w service -->
